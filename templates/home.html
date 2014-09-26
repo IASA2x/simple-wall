@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<form method="POST">
+	<p>
+	<textarea name="content"></textarea>
+	</p>
+	<p>
+	<input type="submit"/>
+	</p>
+</form>
+</div>
+<div class="data">
+	{% for i in messages %}
+	<h2>
+	{{ i['body'] }} 
+</h2> 
+	{% end %}
+</div>
+
+</body>
+</html>
